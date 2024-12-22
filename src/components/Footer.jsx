@@ -63,7 +63,7 @@ const Footer = () => {
               >
                 <span className="text-zinc-50"> Hire me</span>
                 <img
-                  src="../../Images/chevron_right.svg"
+                  src="../../chevron_right.svg"
                   alt="Download CV"
                   className="w-5 h-5"
                 />
@@ -110,12 +110,7 @@ const Footer = () => {
 
         <div className="flex items-center justify-between pt-10 mb-8 border-t border-sky-400">
           <a href="/" className="reveal-up">
-            <img
-              src="../../Images/logo.png"
-              alt="Logo"
-              width={150}
-              height={150}
-            />
+            <img src="../../logo.png" alt="Logo" width={150} height={150} />
           </a>
           <p className="text-sm text-zinc-500 reveal-up">
             &copy; 2024

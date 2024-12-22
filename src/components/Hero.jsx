@@ -4,10 +4,10 @@
  */
 
 import React from "react";
-import smallImage from "../../Images/sm-img.jpg";
-import cvIcon from "../../Images/download.svg";
-import arrowIcon from "../../Images/arrow_downward.svg";
-import mainPhoto from "../../Images/mainPhoto.png";
+import smallImage from "../../sm-img.jpg";
+import cvIcon from "../../download.svg";
+import arrowIcon from "../../arrow_downward.svg";
+import mainPhoto from "../../mainPhoto.png";
 
 const Hero = () => {
   return (
@@ -47,11 +47,7 @@ const Hero = () => {
               className="btn btn-primary flex items-center gap-2 bg-sky-500 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-sky-400 transition duration-300 animate-pulse hover:animate-none"
               download
             >
-              <img
-                src={cvIcon}
-                alt="Download CV"
-                className="w-5 h-5"
-              />
+              <img src={cvIcon} alt="Download CV" className="w-5 h-5" />
               <span>Download CV</span>
             </a>
             <a

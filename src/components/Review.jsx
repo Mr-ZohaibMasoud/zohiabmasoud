@@ -18,42 +18,42 @@ const reviews = [
     content:
       "Exceptional web development! Delivered a seamless, responsive site with clean code and great UX.",
     name: "Sophia Ramirez",
-    imgSrc: "/images/people-1.jpg",
+    imgSrc: "/people-1.jpg",
     company: "PixelForge",
   },
   {
     content:
       "Impressive work! Fast loading times, intuitive design, and flawless backend integration. Highly recommend.",
     name: "Akash Hanif",
-    imgSrc: "/images/people-2.jpg",
+    imgSrc: "/people-2.jpg",
     company: "for personal Project",
   },
   {
     content:
       "Outstanding developer! Built a robust site with perfect functionality. Efficient and detail-oriented.",
     name: "Muhammad Masoud",
-    imgSrc: "/images/people-3.jpg",
+    imgSrc: "/people-3.jpg",
     company: "For Startup",
   },
   {
     content:
       "Creative and skilled! Produced a modern, user-friendly site that exceeded expectations. Great communication.",
     name: "Hafiz Ishtaiq",
-    imgSrc: "/images/people-4.jpg",
+    imgSrc: "/people-4.jpg",
     company: "No Company",
   },
   {
     content:
       "Professional work! Delivered on time, with a polished design and smooth user experience. Top-notch developer.",
     name: "M.Sulman Khan",
-    imgSrc: "/images/people-5.jpg",
+    imgSrc: "/people-5.jpg",
     company: "Individual",
   },
   {
     content:
       "Excellent project execution! High-quality code, responsive design, and exceptional problem-solving skills.",
     name: "Jonathan",
-    imgSrc: "/images/people-6.jpg",
+    imgSrc: "/people-6.jpg",
     company: "Skyline Digital",
   },
 ];

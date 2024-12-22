@@ -14,12 +14,7 @@ const Header = () => {
       <div className="max-w-screen-2xl w-full mx-auto px-4 flex justify-between items-center md:px-6 md:grid md:grid-cols-[1fr,3fr,1fr]">
         <h1>
           <a href="/" className="logo">
-            <img
-              src="/Images/logo.png"
-              width={170}
-              height={70}
-              alt="Zohaib Masoud"
-            />
+            <img src="/logo.png" width={170} height={70} alt="Zohaib Masoud" />
           </a>
         </h1>
         <div className="relative md:justify-self-center">
@@ -29,9 +24,9 @@ const Header = () => {
           >
             <span>
               {navOpen ? (
-                <img src="../../Images/close.svg" alt="close" />
+                <img src="../../close.svg" alt="close" />
               ) : (
-                <img src="../../Images/menu.svg" alt="close" />
+                <img src="../../menu.svg" alt="close" />
               )}
             </span>
           </button>
