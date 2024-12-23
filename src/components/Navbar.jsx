@@ -8,22 +8,56 @@ import PropTypes from "prop-types";
 
 const Navbar = ({ navOpen }) => {
   const activeBox = useRef(); // Ref for the active box
+  const sections = useRef([]); // Ref to store all section elements
 
   const initActiveBox = () => {
     const activeLink = document.querySelector(".nav-link.active");
     if (activeLink && activeBox.current) {
-      activeBox.current.style.top = activeLink.offsetTop + "px";
-      activeBox.current.style.left = activeLink.offsetLeft + "px";
-      activeBox.current.style.width = activeLink.offsetWidth + "px";
-      activeBox.current.style.height = activeLink.offsetHeight + "px";
+      activeBox.current.style.top = `${activeLink.offsetTop}px`;
+      activeBox.current.style.left = `${activeLink.offsetLeft}px`;
+      activeBox.current.style.width = `${activeLink.offsetWidth}px`;
+      activeBox.current.style.height = `${activeLink.offsetHeight}px`;
     }
   };
 
   useEffect(() => {
-    initActiveBox(); // Initialize active box on mount
-    window.addEventListener("resize", initActiveBox); // Update on window resize
-    return () => window.removeEventListener("resize", initActiveBox); // Cleanup
-  }, []);
+    const updateActiveLink = (entries) => {
+      entries.forEach((entry) => {
+        const link = document.querySelector(
+          `.nav-link[href="#${entry.target.id}"]`
+        );
+
+        if (entry.isIntersecting) {
+          document
+            .querySelector(".nav-link.active")
+            ?.classList.remove("active");
+          link?.classList.add("active");
+          initActiveBox();
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(updateActiveLink, {
+      root: null,
+      threshold: 0.6, // Adjust this value for sensitivity
+    });
+
+    // Wait for sections to be ready
+    const initializeSections = () => {
+      sections.current = navItems.map(({ link }) => document.querySelector(link));
+      sections.current.forEach((section) => {
+        if (section) observer.observe(section);
+      });
+    };
+
+    initializeSections();
+    window.addEventListener("resize", initActiveBox);
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener("resize", initActiveBox);
+    };
+  }, []); // Empty dependency array ensures initialization only happens once
 
   const handleLinkClick = (event) => {
     const currentActive = document.querySelector(".nav-link.active");

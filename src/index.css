@@ -117,3 +117,5 @@ body {
 .textarea {
   @apply block outline-none w-full px-3 py-3 h-32 text-sm bg-zinc-800 rounded-lg ring-1 ring-zinc-50/5 ring-inset focus:ring-2 focus:ring-sky-400 focus:outline-none;
 }
+
+
