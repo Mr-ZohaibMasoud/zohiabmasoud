@@ -74,7 +74,7 @@ const Footer = () => {
             <div className="">
               <p className="mb-2 reveal-up">Sitemap</p>
 
-              <ul className="">
+              <ul className="mb-4">
                 {sitemap.map(({ label, href }, key) => (
                   <li key={key}>
                     <a
@@ -110,7 +110,7 @@ const Footer = () => {
 
         <div className="flex items-center justify-between pt-10 mb-8 border-t border-sky-400">
           <a href="/" className="reveal-up">
-            <img src="../../logo.png" alt="Logo" width={150} height={150} />
+            <img src="../../logo.png" alt="Logo" width={150} height={150} className="mb-3 md:mb-0"/>
           </a>
           <p className="text-sm text-zinc-500 reveal-up">
             &copy; 2024
