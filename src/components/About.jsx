@@ -38,7 +38,7 @@ const About = () => {
           </p>
           <div className="flex flex-wrap items-center gap-4 md:gap-7">
             {aboutItems.map(({ label, number }, key) => (
-              <div className="" key={key}>
+              <div className="sm:w-auto w-[60%] mt-0 sm:mt-6" key={key}>
                 <div className="flex items-center md:mb-2">
                   <span className="text-2xl font-semibold md:text-4xl">
                     {number}
