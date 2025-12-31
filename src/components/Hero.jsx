@@ -4,10 +4,6 @@
  */
 
 import React from "react";
-import smallImage from "../../sm-img.jpg";
-import cvIcon from "../../download.svg";
-import arrowIcon from "../../arrow_downward.svg";
-import mainPhoto from "../../mainPhoto.png";
 
 const Hero = () => {
   return (
@@ -19,7 +15,7 @@ const Hero = () => {
           <div className="flex items-center gap-3">
             <figure className="img-box w-9 h-9 rounded-lg">
               <img
-                src={smallImage}
+                src="/sm-img.jpg"
                 width={40}
                 height={40}
                 alt="Zohaib Masoud"
@@ -43,11 +39,12 @@ const Hero = () => {
           {/* Buttons */}
           <div className="flex items-center gap-3">
             <a
-              href="#"
+              href="https://drive.google.com/file/d/1uFM02-dJJprHlVnqMsJHJnbSB2MAooNa/view?usp=sharing"
               className="btn btn-primary flex items-center gap-2 bg-sky-500 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-sky-400 transition duration-300 animate-pulse hover:animate-none"
+              target="_blank"
               download
             >
-              <img src={cvIcon} alt="Download CV" className="w-5 h-5" />
+              <img src="/download.svg" alt="Download CV" className="w-5 h-5" />
               <span>Download CV</span>
             </a>
             <a
@@ -55,7 +52,7 @@ const Hero = () => {
               className="btn-outline flex items-center gap-2 border border-sky-500 text-sky-500 px-6 py-3 rounded-lg hover:bg-sky-400 hover:text-white transition duration-300"
             >
               <span>Scroll Down</span>
-              <img src={arrowIcon} alt="Arrow Down" className="w-5 h-5" />
+              <img src="/arrow_downward.svg" alt="Arrow Down" className="w-5 h-5" />
             </a>
           </div>
         </div>
@@ -68,7 +65,7 @@ const Hero = () => {
           {/* Foreground Image */}
           <figure className="relative w-64 max-w-[480px] rounded-[20px] overflow-hidden">
             <img
-              src={mainPhoto}
+              src="/MainPhoto.png"
               width={300}
               height={40}
               alt="Zohaib Masoud"

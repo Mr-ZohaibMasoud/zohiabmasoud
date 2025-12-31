@@ -39,7 +39,8 @@ const Navbar = ({ navOpen }) => {
 
     const observer = new IntersectionObserver(updateActiveLink, {
       root: null,
-      threshold: 0.6, // Adjust this value for sensitivity
+      threshold: 0.2,
+      rootMargin: "0px 0px -50% 0px", // Trigger when section enters top half of viewport
     });
 
     // Wait for sections to be ready

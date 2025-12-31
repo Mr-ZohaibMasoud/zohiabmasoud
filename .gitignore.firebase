@@ -1,0 +1,4 @@
+# Firebase hosting cache
+.firebase/
+.firebaserc
+dist/

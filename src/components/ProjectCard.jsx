@@ -34,7 +34,7 @@ const ProjectCard = ({ imgSrc, title, tags, projectLink, classes }) => {
         </div>
         <div className="w-11 h-11 rounded-lg bg-zinc-500/5 grid place-items-center bg-sky-400 shrink-0 ">
           <span className="" aria-hidden="true">
-            <img src="../../arrow-outward.svg" alt="" />
+            <img src="/arrow-outward.svg" alt="" />
           </span>
         </div>
       </div>

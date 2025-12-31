@@ -25,7 +25,7 @@ const socialLinks = [
     alt: "GitHub",
   },
   {
-    href: "https://www.linkedin.com/in/zohaib-masoud-747098315?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    href: "https://www.linkedin.com/in/zohaib-masoud",
     icon: (
       <svg
         width="24"

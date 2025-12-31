@@ -29,7 +29,7 @@ const App = () => {
           trigger: element,
           start: "-200 bottom",
           end: "bottom 80%",
-          scrub: true,
+          scrub: 1,
           markers: false,
         },
         y: 0,

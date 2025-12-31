@@ -11,11 +11,11 @@ body {
 }
 
 .menu-btn {
-  @apply w-10 h-10 grid place-items-center bg-zinc-50/10 rounded-xl ring-inset ring-1 ring-zinc-50/[0.02] backdrop-blur-2xl hover:bg-zinc-50/15  transition-[transform,background-color] active:scale-95;
+  @apply w-10 h-10 grid place-items-center bg-zinc-50/10 rounded-xl ring-inset ring-1 ring-zinc-50/[0.02] backdrop-blur-2xl hover:bg-zinc-50/15 transition-[transform, background-color] active:scale-95;
 }
 
 .navbar {
-  @apply absolute top-full mt-2 right-0 min-w-40 p-2 bg-zinc-50/10 rounded-2xl ring-inset ring-1 ring-zinc-50/5 scale-90 isolate blur-sm opacity-0 transition-[transform,opacity,filter] md:static md:flex md:items-center md:mt-0 md:opacity-100  md:blur-0 md:visible md:scale-100 backdrop-blur-2xl;
+  @apply absolute top-full mt-2 right-0 min-w-40 p-2 bg-zinc-50/10 rounded-2xl ring-inset ring-1 ring-zinc-50/5 scale-90 isolate blur-sm opacity-0 transition-[transform, opacity, filter] md:static md:flex md:items-center md:mt-0 md:opacity-100 md:blur-0 md:visible md:scale-100 backdrop-blur-2xl;
 }
 
 .navbar.active {
@@ -31,7 +31,7 @@ body {
 }
 
 .navbar .active-box {
-  @apply absolute bg-zinc-50 rounded-lg -z-10 transition-[top,left] duration-500;
+  @apply absolute bg-zinc-50 rounded-lg -z-10 transition-[top, left] duration-500;
 }
 
 .btn {
@@ -69,6 +69,7 @@ body {
 .btn .btn-img {
   @apply text-[18px];
 }
+
 .btn:has(.btn-img) {
   @apply p-3;
 }
@@ -86,7 +87,8 @@ body {
 }
 
 .reveal-up {
-  @apply opacity-0 translate-y-24
+  opacity: 0;
+  transform: translateY(80px);
 }
 
 
@@ -103,7 +105,7 @@ body {
 }
 
 .label {
-  @apply block font-normal text-zinc-200 mb-2 
+  @apply block font-normal text-zinc-200 mb-2
 }
 
 .text-feild {
@@ -117,5 +119,3 @@ body {
 .textarea {
   @apply block outline-none w-full px-3 py-3 h-32 text-sm bg-zinc-800 rounded-lg ring-1 ring-zinc-50/5 ring-inset focus:ring-2 focus:ring-sky-400 focus:outline-none;
 }
-
-

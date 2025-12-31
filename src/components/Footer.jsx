@@ -35,7 +35,7 @@ const socials = [
   },
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/zohaib-masoud-747098315?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    href: "https://www.linkedin.com/in/zohaib-masoud",
   },
   {
     label: "Facebook",
@@ -109,12 +109,23 @@ const Footer = () => {
         </div>
 
         <div className="flex items-center justify-between pt-10 mb-8 border-t border-sky-400">
-          <a href="/" className="reveal-up">
-            <img src="../../logo.png" alt="Logo" width={150} height={150} className="mb-3 md:mb-0"/>
+          <a
+            href="/"
+            className="reveal-up"
+          >
+            <img
+              src="../../logo.png"
+              alt="Logo"
+              width={150}
+              height={150}
+              className="mb-2 md:mb-0"
+              style={{
+                verticaAalign: "middle"
+              }} />
           </a>
-          <p className="text-sm text-zinc-500 reveal-up">
+          <p className="text-sm text-zinc-500 reveal-up mb-5">
             &copy; 2024
-            <span className="text-zinc-200"> Zohiab Masoud</span>
+            <span className="text-zinc-200"> Zohaib Masoud</span>
           </p>
         </div>
       </div>
