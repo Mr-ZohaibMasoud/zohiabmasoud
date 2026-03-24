@@ -8,7 +8,7 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 =======
-# Zohaib Masoud Portfolio
+# Zohaib Masoud Portfolio Website
 
 Welcome to the **Zohaib Masoud Portfolio**! This is a modern, responsive, and feature-rich personal portfolio website designed to showcase my skills, projects, and expertise in web development. Built with cutting-edge technologies, the website aims to leave a lasting impression on visitors and potential clients.
 
